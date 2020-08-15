@@ -53,9 +53,14 @@
                     <h1>Ristorante con Fusion</h1>
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
                 </div>
-                <div class="col-12 col-sm align-self-center">
+                <div class="col-12 col-sm-3 align-self-center">
                     <img src="img/logo.png" alt="Logo" class="img-fluid">
                 </div>
+
+                <div class="col-12 col-sm-3 align-self-center">
+                    <a href="#reserve" class="btn btn-warning btn-lg btn-block">Reserve Table</a>
+                </div>
+
             </div>
         </div>
     </header>
@@ -80,7 +85,7 @@
                 <div class="media">
                     <img src="img/uthappizza.png" alt="uthappizza" class="d-flex img-thumbnail mr-3 align-self-center">
                     <div class="media-body">
-                        <h2 class="mt-0">Uthappizza</h2>
+                        <h2 class="mt-0">Uthappizza <span class="badge badge-danger">HOT</span> <span class="badge badge-pill badge-secondary">$4.99</span> </h2>
                         <p class="d-none d-sm-block">A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>        
                     </div>
                 </div>
@@ -93,8 +98,13 @@
                 <h3>This Month's Promotions</h3>
             </div>
             <div class="col col-sm col-md">
-                <h2>Weekend Grand Buffet</h2>
-                <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+                <div class="media">
+                    <div class="media-body">
+                        <h2 class="mt-0">Weekend Grand Buffet <span class="badge badge-danger">NEW</span> </h2>
+                        <p class="d-none d-sm-block">Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>        
+                    </div>
+                    <img src="img/buffet.png" alt="buffet" class="d-flex img-thumbnail ml-3 align-self-center">
+                </div>
             </div>
         </div>
 
@@ -115,6 +125,46 @@
                 </div>
            </div>
         </div>
+
+        <!-- Table for booking -->
+        <hr>
+        <div class="row row-content justify-content-center" id="reserve">
+            <div class="col-12 col-sm-8">
+                <div class="card">
+                    <div class="card-header bg-warning text-white">
+                        <h2>Reserve a Table</h2>
+                    </div>
+
+                    <div class="card-body">
+                        <form>
+                        <dl class="row form-group">
+                            <dt class="col-12 col-md-3">Number of Guests</dt>
+                            <dd class="col-2 col-md-1 align-self-center"> <input type="radio"> 1 </dd>
+                            <dd class="col-2 col-md-1 align-self-center"> <input type="radio"> 2 </dd>
+                            <dd class="col-2 col-md-1 align-self-center"> <input type="radio"> 3 </dd>
+                            <dd class="col-2 col-md-1 align-self-center"> <input type="radio"> 4 </dd>
+                            <dd class="col-2 col-md-1 align-self-center"> <input type="radio"> 5 </dd>
+                            <dd class="col-2 col-md-1 align-self-center"> <input type="radio"> 6 </dd>
+                        </dl>
+
+                        <dl class="row form-group">
+                            <dt class="col-12 col-md-3">Date and Time</dt>
+                            <dd class="col-12 col-md-4"> <input type="text" class="form-control" placeholder="Date"> </dd>
+                            <dd class="col-12 col-md-4 "> <input type="text" class="form-control" placeholder="Time"> </dd>
+                        </dl>
+
+                        <dl class="row form-group">
+                            <dt class="col-12 col-md-3"></dt>
+                            <dd class="col-12 col-md">
+                                <button type="submit" class="btn btn-primary">Reserve</button>
+                            </dd>
+                        </dl>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
 
     <footer class="footer">
