@@ -48,7 +48,7 @@ body{
     top: 50%;
     transform: translateY(-50%);
 }
-#carouselButtons{
+#carouselButton{
     position: absolute;
     right: 0;
     bottom: 0;

@@ -246,16 +246,10 @@
                         <span class="carousel-control-next-icon"></span>
                     </a>
 
-                    <!-- Play and Pause buttons -->
-                    <div class="btn-group" id="carouselButtons">
-                        <button class="btn btn-danger btn-small" id="carousel-pause">
+                    <!-- Play and Pause button -->
+                        <button class="btn btn-danger btn-small" id="carouselButton">
                             <span class="fa fa-pause"></span>
                         </button>
-
-                        <button class="btn btn-danger btn-small" id="carousel-play">
-                            <span class="fa fa-play"></span>
-                        </button>
-                    </div>
 
 
                 </div>
@@ -421,11 +415,17 @@
         $(document).ready(function(){
             $("#myCarousel").carousel({ interval:2000 });
 
-            $("#carousel-pause").click(function(){
-                $("#myCarousel").carousel('pause');
-            });
-            $("#carousel-play").click(function(){
-                $("#myCarousel").carousel('cycle');
+            $("#carouselButton").click(function(){
+                if($("#carouselButton").children('span').hasClass('fa-pause')){
+                    $("#myCarousel").carousel('pause');
+                    $("#carouselButton").children('span').removeClass('fa-pause');
+                    $("#carouselButton").children('span').addClass('fa-play');
+                }else{
+                    $("#myCarousel").carousel('cycle');
+                    $("#carouselButton").children('span').removeClass('fa-play');
+                    $("#carouselButton").children('span').addClass('fa-pause');
+                }
+                
             });
         });
     </script>
