@@ -106,24 +106,26 @@
                     <div class="row">
                         <div class="col">
                             <form>
-                                <dl class="row form-group">
+                                <div class="row form-group">
 
-                                    <dt class="col- col-md-2">
+                                    <div class="col- col-md-2">
                                         <label for="guests">Number of Guests</label> 
-                                    </dt>
-                                        <dd class="col-2 col-md-1 align-self-center"> <input type="radio" name="guests" id="g1"> 1 </dd>
-                                        <dd class="col-2 col-md-1 align-self-center"> <input type="radio" name="guests" id="g2"> 2 </dd>
-                                        <dd class="col-2 col-md-1 align-self-center"> <input type="radio" name="guests" id="g3"> 3 </dd>
-                                        <dd class="col-2 col-md-1 align-self-center"> <input type="radio" name="guests" id="g4"> 4 </dd>
-                                        <dd class="col-2 col-md-1 align-self-center"> <input type="radio" name="guests" id="g5"> 5 </dd>
-                                        <dd class="col-2 col-md-1 align-self-center"> <input type="radio" name="guests" id="g6"> 6 </dd>
-                                </dl>
+                                    </div>
+                                        <div class="col-2 col-md-1 align-self-center"> <input type="radio" name="guests" id="g1"> 1 </div>
+                                        <div class="col-2 col-md-1 align-self-center"> <input type="radio" name="guests" id="g2"> 2 </div>
+                                        <div class="col-2 col-md-1 align-self-center"> <input type="radio" name="guests" id="g3"> 3 </div>
+                                        <div class="col-2 col-md-1 align-self-center"> <input type="radio" name="guests" id="g4"> 4 </div>
+                                        <div class="col-2 col-md-1 align-self-center"> <input type="radio" name="guests" id="g5"> 5 </div>
+                                        <div class="col-2 col-md-1 align-self-center"> <input type="radio" name="guests" id="g6"> 6 </div>
+                                </div>
 
-                                <dl class="row form-group">
-                                    <dt class="col- col-md-2">
+                                <div class="row form-group">
+
+                                    <div class="col- col-md-2">
                                        <label for="section">Section</label> 
-                                    </dt>
-                                    <dd class="col- col-md-6">
+                                    </div>
+
+                                    <div class="col- col-md-6">
                                         <div class="btn-group btn-group-toggle" data-toggle="buttons">
                                             <label for="nonSmoke" class="btn btn-success active">
                                                 <input type="radio" name="section" id="nonSmoke" autocomplete="off"> Non-Smoking
@@ -133,25 +135,27 @@
                                                 <input type="radio" name="section" id="Smoke" autocomplete="off"> Smoking
                                             </label>
                                         </div>
-                                    </dd>
-                                </dl>
+                                    </div>
+
+                                </div>
         
-                                <dl class="row form-group">
-                                    <dt class="col- col-md-2">
+                                <div class="row form-group">
+                                    <div class="col- col-md-2">
                                         <label for="dateNtime">Date and Time</label>
-                                    </dt>
-                                        <dd class="col- col-md-3"> <input type="date" class="form-control" placeholder="Date"> </dd>
-                                        <dd class="col- col-md-3 "> <input type="time" class="form-control" placeholder="Time"> </dd>
-                                </dl>
+                                    </div>
+                                        <div class="col- col-md-3"> <input type="date" class="form-control" placeholder="Date"> </div>
+                                        <div class="col- col-md-3 "> <input type="time" class="form-control" placeholder="Time"> </div>
+                                </div>
 
         
-                                <dl class="row form-group">
-                                    <dt class="col- col-md-2"></dt>
-                                        <dd class="col- col-md-8">
+                                <div class="row form-group">
+                                    <div class="col- col-md-2"></div>
+                                    
+                                        <div class="col- col-md-8">
                                             <button type="button" class="btn btn-dark" data-dismiss="modal">Cancel</button>
                                             <button type="submit" class="btn btn-primary">Reserve</button>
-                                        </dd>
-                                </dl>
+                                        </div>
+                                </div>
                             </form>
                         </div>
                     </div>
@@ -242,6 +246,18 @@
                         <span class="carousel-control-next-icon"></span>
                     </a>
 
+                    <!-- Play and Pause buttons -->
+                    <div class="btn-group" id="carouselButtons">
+                        <button class="btn btn-danger btn-small" id="carousel-pause">
+                            <span class="fa fa-pause"></span>
+                        </button>
+
+                        <button class="btn btn-danger btn-small" id="carousel-play">
+                            <span class="fa fa-play"></span>
+                        </button>
+                    </div>
+
+
                 </div>
             </div>
         </div>
@@ -315,28 +331,28 @@
 
                     <div class="card-body">
                         <form>
-                        <dl class="row form-group">
-                            <dt class="col-12 col-md-3">Number of Guests</dt>
-                            <dd class="col-2 col-md-1 align-self-center"> <input type="radio"> 1 </dd>
-                            <dd class="col-2 col-md-1 align-self-center"> <input type="radio"> 2 </dd>
-                            <dd class="col-2 col-md-1 align-self-center"> <input type="radio"> 3 </dd>
-                            <dd class="col-2 col-md-1 align-self-center"> <input type="radio"> 4 </dd>
-                            <dd class="col-2 col-md-1 align-self-center"> <input type="radio"> 5 </dd>
-                            <dd class="col-2 col-md-1 align-self-center"> <input type="radio"> 6 </dd>
-                        </dl>
+                        <div class="row form-group">
+                            <div class="col-12 col-md-3">Number of Guests</div>
+                            <div class="col-2 col-md-1 align-self-center"> <input type="radio"> 1 </div>
+                            <div class="col-2 col-md-1 align-self-center"> <input type="radio"> 2 </div>
+                            <div class="col-2 col-md-1 align-self-center"> <input type="radio"> 3 </div>
+                            <div class="col-2 col-md-1 align-self-center"> <input type="radio"> 4 </div>
+                            <div class="col-2 col-md-1 align-self-center"> <input type="radio"> 5 </div>
+                            <div class="col-2 col-md-1 align-self-center"> <input type="radio"> 6 </div>
+                        </div>
 
-                        <dl class="row form-group">
-                            <dt class="col-12 col-md-3">Date and Time</dt>
-                            <dd class="col-12 col-md-4"> <input type="text" class="form-control" placeholder="Date"> </dd>
-                            <dd class="col-12 col-md-4 "> <input type="text" class="form-control" placeholder="Time"> </dd>
-                        </dl>
+                        <div class="row form-group">
+                            <div class="col-12 col-md-3">Date and Time</div>
+                            <div class="col-12 col-md-4"> <input type="text" class="form-control" placeholder="Date"> </div>
+                            <div class="col-12 col-md-4 "> <input type="text" class="form-control" placeholder="Time"> </div>
+                        </div>
 
-                        <dl class="row form-group">
-                            <dt class="col-12 col-md-3"></dt>
-                            <dd class="col-12 col-md">
+                        <div class="row form-group">
+                            <div class="col-12 col-md-3"></div>
+                            <div class="col-12 col-md">
                                 <button type="submit" class="btn btn-primary">Reserve</button>
-                            </dd>
-                        </dl>
+                            </div>
+                        </div>
                         </form>
                     </div>
                 </div>
@@ -396,7 +412,23 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    
 
+
+    <!-- jQuery Script for Pause and Play buttons-->
+
+    <script>
+        $(document).ready(function(){
+            $("#myCarousel").carousel({ interval:2000 });
+
+            $("#carousel-pause").click(function(){
+                $("#myCarousel").carousel('pause');
+            });
+            $("#carousel-play").click(function(){
+                $("#myCarousel").carousel('cycle');
+            });
+        });
+    </script>
 
 
     <!-- Script for tooltip feature [Reserve button]

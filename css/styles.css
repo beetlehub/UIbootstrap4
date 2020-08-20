@@ -48,3 +48,9 @@ body{
     top: 50%;
     transform: translateY(-50%);
 }
+#carouselButtons{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
